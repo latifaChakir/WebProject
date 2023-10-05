@@ -1,186 +1,209 @@
-body, h1, h2, ul, li, p, form {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+ul,
+li,
+p,
+form {
+  margin: 0;
+  padding: 0;
 }
 
 /* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  padding: 0px;
 }
 
 header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
-    margin-top: 20px;
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 main {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 130px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 210px 0;
 }
 
 section {
-    padding: 40px 0;
+  padding: 10px 0;
 }
 
 h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Styles de bouton */
+
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgb(51, 51, 51);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 520px;
+}
+.button {
+  padding: 10px 20px;
+  background-color: rgb(51, 51, 51);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /* Styles des services */
 .services-grid {
-    padding-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .service img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .service img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Styles du formulaire de contact */
-form label, form textarea, form input, form button {
-    display: block;
-    margin-bottom: 20px;
-    width: 100%;
+form label,
+form textarea,
+form input,
+form button {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 form textarea {
-    height: 150px;
+  height: 150px;
 }
 
 form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Styles de pied de page */
 footer {
-
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    
-    
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
 /* Styles responsives */
 @media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 24px;
-    }
+  header h1 {
+    font-size: 24px;
+  }
 
-    nav li {
-        margin-right: 10px;
-    }
+  nav li {
+    margin-right: 10px;
+  }
 
-    .btn {
-       
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 
-    .services-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .blogs-grid {
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .blogs img {
-    width: 600px;
-    height: 200px;
-    max-width: 80%;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+  width: 600px;
+  height: 200px;
+  max-width: 80%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
- img:hover {
-    transform: scale(1.1);
+img:hover {
+  transform: scale(1.1);
 }
 .blogs-grid {
-    grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .blogs {
-    justify-content: space-between;
-    padding: 100px;
-    display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  display: flex;
+  background-color: rgb(248, 247, 252);
+  border-color: inherit;
+  border-radius: 5%;
+  margin-top: 20px;
 }
- .para {
-    padding-top: 60px;
-    color: rgb(0, 0, 0);
-    
+
+.para {
+  padding-top: 60px;
+  color: rgb(0, 0, 0);
 }
 .button {
-    color: aqua;
+  color: aqua;
 }
 
-
-
-
-
+.title {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-weight: 700px;
+  line-height: normal;
+  color: black;
+  padding-bottom: 20px;
+}
